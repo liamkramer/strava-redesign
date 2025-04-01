@@ -1,0 +1,332 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.container {
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.logo-and-links {
+    display: flex;
+    align-items: center;
+}
+
+.strava-logo,
+.activiteiten-button {
+    background-color: transparent;
+    border: none;
+}
+
+.strava-logo {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0;
+}
+
+.logo-image {
+    width: 95px;
+    height: 20px;
+}
+
+.activiteiten-button {
+    padding: 26px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.chevron {
+    width: 12px;
+    height: auto;
+}
+
+.logo-and-links>ul {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 24px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 26px 20px;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.aanmeld-button {
+    margin-left: auto;
+    padding: 10px 24px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* main */
+
+.hero-section {
+    display: flex;
+    height: 514px;
+}
+
+.middle-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 343px;
+    min-width: 430px;
+    padding: 0 48px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 18px;
+    margin-bottom: 1rem;
+    line-height: 100%;
+}
+
+.middle-column p {
+    margin: 0 0 1.23em;
+    font-size: .875rem;
+    color: #43423f;
+    margin-bottom: 1.5rem;
+    line-height: 100%;
+}
+
+.register-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.google {
+    background-color: #fafafa;
+    color: #21211f;
+    border: solid #64635e 1px;
+}
+
+.apple {
+    background-color: #fafafa;
+    color: #21211f;
+    border: solid #64635e 1px;
+}
+
+.email {
+    background-color: #fc5200;
+    color: white;
+    border: none;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem;
+    width: auto;
+    height: 24px;
+}
+
+.disclaimer-text {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.disclaimer-text a {
+    color: #0060d0;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.already-member {
+    font-size: 1rem;
+    color: #64635e;
+    margin-bottom: .5rem;
+}
+
+.already-member a {
+    font-weight: 600;
+    color: #fc5200;
+    text-decoration: none;
+}
+
+.hero-picture {
+    display: flex;
+    height: 100%;
+    flex: 1 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* footer */
+
+footer {
+    background-color: #f9f8f5;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1 1;
+}
+
+.footer-links {
+    flex: 2 1;
+    padding-right: 12%;
+}
+
+.footer-links>ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 4rem;
+}
+
+.footer-links>ul>li {
+    max-width: 154px;
+}
+
+.footer-links>ul>li>ul>li a {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #43423f;
+}
+
+.footer-links>ul>li>ul>li {
+    padding-bottom: 12px;
+}
+
+.footer-links>ul>li>ul>li a.footer-highlight {
+    color: #fc5200;
+}
+
+a {
+    color: #43423f;
+    text-decoration: none;
+}
+
+.strava-logo-footer {
+    width: auto;
+    height: 23px;
+}
+
+.download-app {
+    height: 35px;
+    width: 105px;
+}
+
+.socials-icons {
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: unset;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.socials-icons img {
+    width: 21px;
+    height: 21px;
+}
+
+.personal-info {
+    all: unset;
+    cursor: pointer;
+    color: #43423f;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.personal-info:hover,
+.activiteiten-button:hover {
+    text-decoration: underline;
+}
+
+/* overig */
+
+/* 
+mobile
+>768px tablet
+>992px desktop
+>1800px large desktop
+*/
+
+@media (min-width: 1800px) {
+    .hero-section {
+        height: 760px;
+    }
+}
